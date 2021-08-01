@@ -27,12 +27,12 @@ function calculate() {
     $("#checkout").removeClass("display");
     if (deliveryA === 200) {
         $("#checkout").click(function() {
-            window.open("../thankyoupage1.html");
+            window.open("../thankyoupage1/");
             window.location.reload();
         });
     } else {
         $("#checkout").click(function() {
-            window.open("../thanyoupage2.html");
+            window.open("../thanyoupage2/");
             window.location.reload();
         });
     }
