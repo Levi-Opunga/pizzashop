@@ -1,11 +1,16 @@
 div.top {
     background-color: rgb(73, 199, 15);
-    font-family: "Special Elite", cursive;
+    font-family: "Lobster", cursive;
     color: white;
+    padding-bottom: 40px;
 }
 
 h1.ordertext {
     font-family: "Lobster", cursive;
+}
+
+label {
+    font-family: "Roboto Slab", serif;
 }
 
 div.text {

@@ -27,15 +27,13 @@ function calculate() {
     $("#checkout").removeClass("display");
     if (deliveryA === 200) {
         $("#checkout").click(function() {
-            alert(
-                "Thank you for your purchase, your pizza will be delivered shortly"
-            );
+            window.open("../thankyoupage1.html");
+            window.location.reload();
         });
     } else {
         $("#checkout").click(function() {
-            alert(
-                "Thank you for purchase, you pizza will be ready for pick-up in 20 minutes"
-            );
+            window.open("../thanyoupage2.html");
+            window.location.reload();
         });
     }
 }
