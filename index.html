@@ -18,7 +18,7 @@
     <title>Levi's Pizza</title>
 </head>
 
-<body>
+<body class="">
     <header>
 
     </header>
@@ -63,19 +63,19 @@
             <span class="dot" onmouseover="currentSlide(2)"></span>
             <span class="dot" onmouseover="currentSlide(3)"></span>
         </div><br><br>
-        <div class="order container">
+        <div class="order pb-5 container-fluid">
             <h1 class="ordertext text-center pb-3 pt-3">To make your order</h1>
             <hr class="double">
             <h1 class="ordertext text-center pt-2">Pick a size pizza size</h1><br>
             <form id="pizzaDetails">
                 <div class="row container text-center ">
 
-                    <div class="col-md-4  small inline"> <img src="images/sizer.jpg" height="110"> <br><input type="radio" id="html" name="crust" value="500"> <label for="small">SMALL</label>
+                    <div class="col-md-3 offset-1  small inline"> <img src="images/sizer.jpg" height="110"> <br><input type="radio" id="html" name="crust" value="500"> <label for="small">SMALL</label>
                     </div>
                     <div class="col-md-4 medium"> <br>
                         <img src="images/sizer.jpg" height="150"><br> <input type="radio" id="medium" name="crust" value="700">   <label for="medium">MEDIUM</label><br>
                     </div>
-                    <div class="col-md-4 large"><img src="images/sizer.jpg" height="200"><br> <input type="radio" id="large" name="crust" value="900">   <label for="large">LARGE</label>
+                    <div class="col-md-3 large"><img src="images/sizer.jpg" height="200"><br> <input type="radio" id="large" name="crust" value="900">   <label for="large">LARGE</label>
                     </div>
 
 
@@ -87,13 +87,13 @@
                 </h1>
                 <div style="display:block;">
                     <div class="row">
-                        <div class="col-md-3"> <input type="radio" id="crispy" name="crust-type" value="50">
+                        <div class="col-md-2 offset-1"> <input type="radio" id="crispy" name="crust-type" value="50">
                             <label for="crispy">THIN 'N' Crispy</label><br></div>
                         <div class="col-md-3"> <input type="radio" id="fluffy" name="crust-type" value="75">
                             <label for="fluffy">Soft 'N' Fluffy</label><br></div>
                         <div class="col-md-3"> <input type="radio" id="thick" name="crust-type" value="100">
                             <label for="thick">Thick pan crust</label></div>
-                        <div class="col-md-3"> <input type="radio" id="cheese" name="crust-type" value="100">
+                        <div class="col-md-2"> <input type="radio" id="cheese" name="crust-type" value="100">
                             <label for="cheese">Cheesy cheese crust</label></div>
                     </div>
                 </div>
@@ -102,21 +102,28 @@
                 </h1>
                 <div>
                     <div class="row">
-                        <div class="col-md-4"> <input type="checkbox" id="" name="toppings" value="1">
+                        <div class="col-md-3 offset-1"> <input type="checkbox" id="shrooms" name="toppings1" value="30">
                             <label for="html">Mushroom</label><br></div>
-                        <div class="col-md-4"> <input type="checkbox" id="css" name="toppings" value="2">
+                        <div class="col-md-3"> <input type="checkbox" id="pepperoni" name="toppings2" value="47">
                             <label for="css">Pepperoni</label><br></div>
-                        <div class="col-md-4"> <input type="checkbox" id="javascript" name="toppings" value="3">
+                        <div class="col-md-3"> <input type="checkbox" id="onion" name="toppings3" value="13">
+
                             <label for="javascript">Onions</label></div>
-                        <div class="col-md-4"> <input type="checkbox" id="onion" name="toppings" value="4">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 offset-1"> <input type="checkbox" id="sausge" name="toppings4" value="50">
                             <label for="javascript">Sausage</label></div>
-                        <div class="col-md-4"> <input type="checkbox" id="bacon" name="toppings" value="5">
+                        <div class="col-md-3"> <input type="checkbox" id="bacon" name="toppings5" value="50">
                             <label for="javascript"></label>Bacon</div>
-                        <div class="col-md-4"> <input type="checkbox" id="olives" name="toppings" value="6">
+
+                        <div class="col-md-4"> <input type="checkbox" id="olives" name="toppings6" value="25">
                             <label for="javascript">Black Olives</label></div>
-                        <div class="col-md-4"> <input type="checkbox" id="pineapples" name="toppings" value="7">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 offset-1"> <input type="checkbox" id="pineapples" name="toppings7" value="40">
                             <label for="javascript">Pineapples</label></div>
                     </div>
+
                 </div>
                 <br>
                 <h1 class="ordertext text-center pb-3 pt-3" style="display:block;">How many pizzas?
@@ -124,14 +131,24 @@
                 <span class="span text-center"> <input type="number" class="" placeholder="Enter number"
                         id="number"></span>
                 <br>
-                <span class="span text-center pt-3"> <input type="submit" class="btn" value="Make your order"
-                        id="submit"></span>
+                <span class="span text-center pt-3 "> <button type="button" class="btn btn-primary"
+                        onclick="calculate()">Make your order</button></span>
             </form>
         </div>
+        <h1 id="total"></h1>
     </main>
-    <footer>
+    <footer style="padding-top:30px; padding-bottom :6px;" class="container-fluid darktext white">
+        <h6 class="text-center">Contact us by :</h6>
+        <h5 class="text-center">Phone: +2547456467</h5>
+        <h5 class="text-center">Email: LevisPizza@gmail.com</h5>
+
+        <p class=" text-center ">
+            <font size="3">Levi's Pizza 2021</font>
+            <font size="-2">(c)</font>
+        </p>
 
     </footer>
+
 </body>
 
 </html>
