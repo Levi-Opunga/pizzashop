@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Creepster&family=Fjalla+One&family=Lobster&family=Pacifico&family=Roboto+Slab:wght@500&family=Satisfy&family=Special+Elite&family=Tourney&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <title>Levi's Pizza</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="top text-center pt-5">
+            <div class="display-2">WELCOME
+                <br>TO <br> <img src="./images/Pizza-logo-vector-PNG.png" width=" 100 " height="90 " class="pb-2"> Levi's Pizzeria
+                <img src="./images/Pizza-logo-vector-PNG.png " width=" 100 " height=" 90 " class="pb-2">
+            </div>
+        </div>
+
+        <div class="slideshow-container mt-5">
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./images/15-Minute-Pizza-WS-Thumbnail.png" style="width:100%">
+                <div class="text display-4">WELCOME</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./images/delish-homemade-pizza-horizontal-1542312378.png" style="width:100%">
+                <div class="text display-4">AND</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./images/4274048cd5f17c49dfee280f77a3739d_Cheese-Pizza_HB-2_1500_700.jpg" style="width:100%">
+                <div class="text display-4">ENJOY</div>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+        <div style="text-align:center">
+            <span class="dot" onmouseover="currentSlide(1)"></span>
+            <span class="dot" onmouseover="currentSlide(2)"></span>
+            <span class="dot" onmouseover="currentSlide(3)"></span>
+        </div><br><br>
+        <div class="order container">
+            <h1 class="ordertext text-center pb-3 pt-3">To make your order</h1>
+            <hr class="double">
+            <h1 class="ordertext text-center pt-2">Pick a size pizza size</h1><br>
+            <form id="pizzaDetails">
+                <div class="row container text-center ">
+
+                    <div class="col-md-4  small inline"> <img src="images/sizer.jpg" height="110"> <br><input type="radio" id="html" name="crust" value="500"> <label for="small">SMALL</label>
+                    </div>
+                    <div class="col-md-4 medium"> <br>
+                        <img src="images/sizer.jpg" height="150"><br> <input type="radio" id="medium" name="crust" value="700">   <label for="medium">MEDIUM</label><br>
+                    </div>
+                    <div class="col-md-4 large"><img src="images/sizer.jpg" height="200"><br> <input type="radio" id="large" name="crust" value="900">   <label for="large">LARGE</label>
+                    </div>
+
+
+
+
+                </div>
+                <br>
+                <h1 class="ordertext text-center pb-3 pt-3" style="display:block;">Pick a crust type
+                </h1>
+                <div style="display:block;">
+                    <div class="row">
+                        <div class="col-md-3"> <input type="radio" id="crispy" name="crust-type" value="50">
+                            <label for="crispy">THIN 'N' Crispy</label><br></div>
+                        <div class="col-md-3"> <input type="radio" id="fluffy" name="crust-type" value="75">
+                            <label for="fluffy">Soft 'N' Fluffy</label><br></div>
+                        <div class="col-md-3"> <input type="radio" id="thick" name="crust-type" value="100">
+                            <label for="thick">Thick pan crust</label></div>
+                        <div class="col-md-3"> <input type="radio" id="cheese" name="crust-type" value="100">
+                            <label for="cheese">Cheesy cheese crust</label></div>
+                    </div>
+                </div>
+                <br>
+                <h1 class="ordertext text-center pb-3 pt-3" style="display:block;">Pick your favorite toppings
+                </h1>
+                <div>
+                    <div class="row">
+                        <div class="col-md-4"> <input type="checkbox" id="" name="toppings" value="1">
+                            <label for="html">Mushroom</label><br></div>
+                        <div class="col-md-4"> <input type="checkbox" id="css" name="toppings" value="2">
+                            <label for="css">Pepperoni</label><br></div>
+                        <div class="col-md-4"> <input type="checkbox" id="javascript" name="toppings" value="3">
+                            <label for="javascript">Onions</label></div>
+                        <div class="col-md-4"> <input type="checkbox" id="onion" name="toppings" value="4">
+                            <label for="javascript">Sausage</label></div>
+                        <div class="col-md-4"> <input type="checkbox" id="bacon" name="toppings" value="5">
+                            <label for="javascript"></label>Bacon</div>
+                        <div class="col-md-4"> <input type="checkbox" id="olives" name="toppings" value="6">
+                            <label for="javascript">Black Olives</label></div>
+                        <div class="col-md-4"> <input type="checkbox" id="pineapples" name="toppings" value="7">
+                            <label for="javascript">Pineapples</label></div>
+                    </div>
+                </div>
+                <br>
+                <h1 class="ordertext text-center pb-3 pt-3" style="display:block;">How many pizzas?
+                </h1>
+                <span class="span text-center"> <input type="number" class="" placeholder="Enter number"
+                        id="number"></span>
+                <br>
+                <span class="span text-center pt-3"> <input type="submit" class="btn" value="Make your order"
+                        id="submit"></span>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
