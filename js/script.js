@@ -1,21 +1,47 @@
-$(document).ready(function() {
-    $("#pizzaDetails").submit(function(e) {
-        e.preventDefault();
-        var crustType = document.querySelector('input[name="crust-type"]').val;
-        var crustSize = document.querySelector('input[name="crust"]').val;
-        var topping = document.querySelector('input[name="toppings"]').val;
-    });
-});
+$(document).ready(function() {});
+
+function calculate() {
+    var crustType = document.querySelector(
+        'input[name="crust-type"]:checked'
+    ).value;
+    var crustSize = document.querySelector('input[name="crust"]:checked').value;
+    var toppingA = document.querySelector(
+        'input[name="toppings1"]:checked'
+    ).value;
+    var toppingB = document.querySelector(
+        'input[name="toppings2"]:checked'
+    ).value;
+    var toppingC = document.querySelector(
+        'input[name="toppings3"]:checked'
+    ).value;
+    var toppingD = document.querySelector(
+        'input[name="toppings4"]:checked'
+    ).value;
+    var toppingE = document.querySelector(
+        'input[name="toppings5"]:checked'
+    ).value;
+    var toppingE = document.querySelector(
+        'input[name="toppings6"]:checked'
+    ).value;
+    var toppingF = document.querySelector(
+        'input[name="toppings7"]:checked'
+    ).value;
+    var quantity = document.getElementById("number").value;
+    crustType = parseInt(crustType);
+    crustSize = parseInt(crustSize);
+    topping = parseInt(topping);
+    quantity = parseInt(quantity);
+    var total = (crustSize + crustType + topping) * quantity;
+    document.getElementById("total").innerHTML = "Your bill is " + total;
+}
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides((slideIndex = n));
 }
