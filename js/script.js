@@ -32,7 +32,7 @@ function calculate() {
         });
     } else {
         $("#checkout").click(function() {
-            window.open("../thanyoupage2/");
+            window.open("../thankyoupage2/");
             window.location.reload();
         });
     }
