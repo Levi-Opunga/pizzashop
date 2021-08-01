@@ -1,5 +1,5 @@
 div.top {
-    background-color: rgb(73, 199, 15);
+    background-color: #1adf0c;
     font-family: "Lobster", cursive;
     color: white;
     padding-bottom: 40px;
@@ -24,7 +24,7 @@ hr.double {
 }
 
 div.order {
-    background-color: red;
+    background-color: #e10c1a;
 }
 
 * {
