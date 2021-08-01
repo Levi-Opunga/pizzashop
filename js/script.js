@@ -1,20 +1,43 @@
 $(document).ready(function() {});
 
 function calculate() {
-    var crustSize = document.querySelector('input[name="crust"]:checked').value;
-    var crustType = document.querySelector(
-        'input[name="crust-type"]:checked'
-    ).value;
-    var topping = document.querySelector('input[name="toppings"]:checked').value;
+    var crustSize = document.querySelector('input[name="crust"]:checked');
+    var crustType = document.querySelector('input[name="crust-type"]:checked');
+    var topping = document.querySelector('input[name="toppings"]:checked');
     var quantity = document.getElementById("number").value;
-    var delivery = document.querySelector('input[name="delivery"]:checked').value;
-    crustType = parseInt(crustType);
-    crustSize = parseInt(crustSize);
-    topping = parseInt(topping);
-    quantity = parseInt(quantity);
-    delivery = parseInt(delivery);
-    var total = (crustSize + crustType + topping + delivery) * quantity;
+    var delivery = document.querySelector('input[name="delivery"]:checked');
+    var crustTypeA = parseInt(crustType.value);
+    var crustSizeA = parseInt(crustSize.value);
+    var toppingA = parseInt(topping.value);
+    var quantity = parseInt(quantity);
+    var deliveryA = parseInt(delivery.value);
+    var total = (crustSizeA + crustTypeA + toppingA + deliveryA) * quantity;
+    var totalIndividualDisplay = crustSizeA + crustTypeA + toppingA + deliveryA;
     document.getElementById("total").innerHTML = "Your bill is " + total;
+    document.getElementById("details").innerHTML = "Your order summary:";
+    document.getElementById("size").innerHTML = "Pizza size: " + crustSize.id;
+    document.getElementById("type").innerHTML = "With a " + crustType.id;
+    document.getElementById("top").innerHTML =
+        "With additional toppings " + topping.id;
+    document.getElementById("deliveryBill").innerHTML = delivery.id;
+    document.getElementById("chargePer").innerHTML =
+        "Your charge per pizza " + totalIndividualDisplay;
+    document.getElementById("totalA").innerHTML =
+        "Your total bill is " + totalIndividualDisplay + " × " + quantity;
+    $("#checkout").removeClass("display");
+    if (deliveryA === 200) {
+        $("#checkout").click(function() {
+            alert(
+                "Thank you for your purchase, your pizza will be delivered shortly"
+            );
+        });
+    } else {
+        $("#checkout").click(function() {
+            alert(
+                "Thank you for purchase, you pizza will be ready for pick-up in 20 minutes"
+            );
+        });
+    }
 }
 
 var slideIndex = 1;
