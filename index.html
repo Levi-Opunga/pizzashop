@@ -102,25 +102,25 @@
                 </h1>
                 <div>
                     <div class="row">
-                        <div class="col-md-3 offset-1"> <input type="checkbox" id="shrooms" name="toppings1" value="30">
+                        <div class="col-md-3 offset-1"> <input type="checkbox" id="shrooms" name="toppings" value="30">
                             <label for="shroom">Mushroom</label><br></div>
-                        <div class="col-md-3"> <input type="checkbox" id="pepperoni" name="toppings2" value="47">
+                        <div class="col-md-3"> <input type="checkbox" id="pepperoni" name="toppings" value="47">
                             <label for="pepper">Pepperoni</label><br></div>
-                        <div class="col-md-3"> <input type="checkbox" id="onion" name="toppings3" value="13">
+                        <div class="col-md-3"> <input type="checkbox" id="onion" name="toppings" value="13">
 
                             <label for="onion">Onions</label></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 offset-1"> <input type="checkbox" id="sausge" name="toppings4" value="50">
+                        <div class="col-md-3 offset-1"> <input type="checkbox" id="sausge" name="toppings" value="50">
                             <label for="sausage">Sausage</label></div>
-                        <div class="col-md-3"> <input type="checkbox" id="bacon" name="toppings5" value="50">
+                        <div class="col-md-3"> <input type="checkbox" id="bacon" name="toppings" value="50">
                             <label for="bacon"></label>Bacon</div>
 
-                        <div class="col-md-4"> <input type="checkbox" id="olives" name="toppings6" value="25">
+                        <div class="col-md-4"> <input type="checkbox" id="olives" name="toppings" value="25">
                             <label for="olives">Black Olives</label></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 offset-1"> <input type="checkbox" id="pineapples" name="toppings7" value="40">
+                        <div class="col-md-3 offset-1"> <input type="checkbox" id="pineapples" name="toppings" value="40">
                             <label for="pineapples">Pineapples</label></div>
                     </div>
 
@@ -131,11 +131,19 @@
                 <span class="span text-center"> <input type="number" class="" placeholder="Enter number"
                         id="number"></span>
                 <br>
-                <span class="span text-center pt-3 "> <button type="button" class="btn btn-primary"
+                <h1 class="text-center ordertext">Pre-pay delivery cost</h1>
+                <div class="row pt-2 pb-5 text-center">
+                    <div class="col-md-3 offset-4"> <input type="radio" id="yes" name="delivery" value="200">
+                        <label for="delivery">Yes</label></div>
+                    <div class="col-md-3 offset-4"> <input type="radio" id="no" name="delivery" value="0">
+                        <label for="delivery">no</label></div>
+                </div>
+
+                <span class="span text-center pt-3 "> <button type="button" class="btn btn-default"
                         onclick="calculate()">Make your order</button></span>
             </form>
         </div>
-        <h1 id="total"></h1>
+        <h1 class="text-center" id="total"></h1>
     </main>
     <footer style="padding-top:30px; padding-bottom :6px;" class="container-fluid darktext white">
         <h6 class="text-center">Contact us by :</h6>
