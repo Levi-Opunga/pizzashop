@@ -70,12 +70,14 @@
             <form id="pizzaDetails">
                 <div class="row container text-center ">
 
-                    <div class="col-md-3 offset-1  small inline"> <img src="images/sizer.jpg" height="110"> <br><input type="radio" id="html" name="crust" value="500"> <label for="small">SMALL</label>
+                    <div class="col-md-3 offset-1  small inline"> <img src="images/sizer.jpg" height="110"> <br><label for="small"><input type="radio" id="Small @ 500" name="crust" value="500"> SMALL</label>
                     </div>
                     <div class="col-md-4 medium"> <br>
-                        <img src="images/sizer.jpg" height="150"><br> <input type="radio" id="medium" name="crust" value="700">   <label for="medium">MEDIUM</label><br>
+                        <img src="images/sizer.jpg" height="150"><br><label for="medium"> <input type="radio"
+                                id="medium @ 700" name="crust" value="700">   MEDIUM</label><br>
                     </div>
-                    <div class="col-md-3 large"><img src="images/sizer.jpg" height="200"><br> <input type="radio" id="large" name="crust" value="900">   <label for="large">LARGE</label>
+                    <div class="col-md-3 large"><img src="images/sizer.jpg" height="200"><br>   <label for="large">
+                            <input type="radio" id="large @ 900" name="crust" value="900">LARGE</label>
                     </div>
 
 
@@ -87,13 +89,13 @@
                 </h1>
                 <div style="display:block;">
                     <div class="row">
-                        <div class="col-md-2 offset-1"> <input type="radio" id="crispy" name="crust-type" value="50">
-                            <label for="crispy">THIN 'N' Crispy</label><br></div>
-                        <div class="col-md-3"> <input type="radio" id="fluffy" name="crust-type" value="75">
+                        <div class="col-md-2 offset-1"> <input type="radio" id="Thin 'N' Crispy crust @ no extra cost" name="crust-type" value="0">
+                            <label for="crispy">Thin 'N' Crispy</label><br></div>
+                        <div class="col-md-3"> <input type="radio" id="Soft 'N' Fluffy crust @ aditonal 100" name="crust-type" value="100">
                             <label for="fluffy">Soft 'N' Fluffy</label><br></div>
-                        <div class="col-md-3"> <input type="radio" id="thick" name="crust-type" value="100">
+                        <div class="col-md-3"> <input type="radio" id="Thick pan crust @ aditonal 100" name="crust-type" value="100">
                             <label for="thick">Thick pan crust</label></div>
-                        <div class="col-md-2"> <input type="radio" id="cheese" name="crust-type" value="100">
+                        <div class="col-md-2"> <input type="radio" id="Cheesy cheese crust @ aditonal 100" name="crust-type" value="100">
                             <label for="cheese">Cheesy cheese crust</label></div>
                     </div>
                 </div>
@@ -102,25 +104,25 @@
                 </h1>
                 <div>
                     <div class="row">
-                        <div class="col-md-3 offset-1"> <input type="checkbox" id="shrooms" name="toppings" value="30">
+                        <div class="col-md-3 offset-1"> <input type="checkbox" id="mushrooms @ 35" name="toppings" value="35">
                             <label for="shroom">Mushroom</label><br></div>
-                        <div class="col-md-3"> <input type="checkbox" id="pepperoni" name="toppings" value="47">
+                        <div class="col-md-3"> <input type="checkbox" id="pepperoni @ 47" name="toppings" value="47">
                             <label for="pepper">Pepperoni</label><br></div>
-                        <div class="col-md-3"> <input type="checkbox" id="onion" name="toppings" value="13">
+                        <div class="col-md-3"> <input type="checkbox" id="onion @ 13" name="toppings" value="13">
 
                             <label for="onion">Onions</label></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 offset-1"> <input type="checkbox" id="sausge" name="toppings" value="50">
+                        <div class="col-md-3 offset-1"> <input type="checkbox" id="sausage @ 50" name="toppings" value="50">
                             <label for="sausage">Sausage</label></div>
-                        <div class="col-md-3"> <input type="checkbox" id="bacon" name="toppings" value="50">
+                        <div class="col-md-3"> <input type="checkbox" id="bacon @ 50" name="toppings" value="50">
                             <label for="bacon"></label>Bacon</div>
 
-                        <div class="col-md-4"> <input type="checkbox" id="olives" name="toppings" value="25">
+                        <div class="col-md-4"> <input type="checkbox" id="black olives @ 25" name="toppings" value="25">
                             <label for="olives">Black Olives</label></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 offset-1"> <input type="checkbox" id="pineapples" name="toppings" value="40">
+                        <div class="col-md-3 offset-1"> <input type="checkbox" id="pineapples @ 40" name="toppings" value="40">
                             <label for="pineapples">Pineapples</label></div>
                     </div>
 
@@ -131,11 +133,11 @@
                 <span class="span text-center"> <input type="number" class="" placeholder="Enter number"
                         id="number"></span>
                 <br>
-                <h1 class="text-center ordertext">Pre-pay delivery cost</h1>
+                <h1 class="text-center ordertext">Delivery cost</h1>
                 <div class="row pt-2 pb-5 text-center">
-                    <div class="col-md-3 offset-4"> <input type="radio" id="yes" name="delivery" value="200">
+                    <div class="col-md-3 offset-4"> <input type="radio" id="And aditonal 200 for delivery" name="delivery" value="200">
                         <label for="delivery">Yes</label></div>
-                    <div class="col-md-3 offset-4"> <input type="radio" id="no" name="delivery" value="0">
+                    <div class="col-md-3 offset-4"> <input type="radio" id="" name="delivery" value="0">
                         <label for="delivery">no</label></div>
                 </div>
 
@@ -143,7 +145,18 @@
                         onclick="calculate()">Make your order</button></span>
             </form>
         </div>
-        <h1 class="text-center" id="total"></h1>
+
+        <p class="text-center" id="details"></p>
+        <p id="size" class="text-center"></p>
+        <p id="type" class="text-center"></p>
+        <p id="top" class="text-center"></p>
+        <p class="text-center" id="deliveryBill"></p>
+        <p class="text-center" id="chargePer"></p>
+        <p id="totalA" class="text-center"></p>
+        <h1 class="text-center" id="total">
+        </h1>
+        <span class="text-center span display pb-4" id="checkout"> <button type="button" class="btn btn-danger">Check
+                Out</button></span>
     </main>
     <footer style="padding-top:30px; padding-bottom :6px;" class="container-fluid darktext white">
         <h6 class="text-center">Contact us by :</h6>
