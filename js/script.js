@@ -5,27 +5,29 @@ function calculate() {
         'input[name="crust-type"]:checked'
     ).value;
     var crustSize = document.querySelector('input[name="crust"]:checked').value;
-    var toppingA = document.querySelector(
-        'input[name="toppings1"]:checked'
-    ).value;
-    var toppingB = document.querySelector(
-        'input[name="toppings2"]:checked'
-    ).value;
-    var toppingC = document.querySelector(
-        'input[name="toppings3"]:checked'
-    ).value;
-    var toppingD = document.querySelector(
-        'input[name="toppings4"]:checked'
-    ).value;
-    var toppingE = document.querySelector(
-        'input[name="toppings5"]:checked'
-    ).value;
-    var toppingE = document.querySelector(
-        'input[name="toppings6"]:checked'
-    ).value;
-    var toppingF = document.querySelector(
-        'input[name="toppings7"]:checked'
-    ).value;
+    var toppingA = parseInt(
+        document.querySelector('input[name="toppings1"]:checked').value
+    );
+    var toppingB = parseInt(
+        document.querySelector('input[name="toppings2"]:checked').value
+    );
+    var toppingC = parseInt(
+        document.querySelector('input[name="toppings3"]:checked').value
+    );
+    var toppingD = parseInt(
+        document.querySelector('input[name="toppings4"]:checked').value
+    );
+    var toppingE = parseInt(
+        document.querySelector('input[name="toppings5"]:checked').value
+    );
+    var toppingF = parseInt(
+        document.querySelector('input[name="toppings6"]:checked').value
+    );
+    var toppingG = parseInt(
+        document.querySelector('input[name="toppings7"]:checked').value
+    );
+
+    totalToppings = parseInt();
     var quantity = document.getElementById("number").value;
     crustType = parseInt(crustType);
     crustSize = parseInt(crustSize);
