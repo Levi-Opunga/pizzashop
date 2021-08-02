@@ -40,6 +40,7 @@ function display() {
     document.getElementById("totalA").innerHTML =
         "Your total bill is " + totalIndividualDisplay + " × " + quantity;
     $("#checkout").removeClass("display");
+
     if (deliveryA === 200) {
         $("#checkout").click(function() {
             window.open("../thankyoupage1/");
@@ -51,10 +52,11 @@ function display() {
             window.location.reload();
         });
     }
-    if (delivery.value == 200) {
+    if (deliveryA == 200) {
         $("#text").removeClass("display");
+        alert("Enter delivery location before checkout");
     }
-    if (delivery.value != 200) {
+    if (deliveryA != 200) {
         $("#text").addClass("display");
     }
 }
