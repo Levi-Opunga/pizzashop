@@ -14,7 +14,7 @@
 
 - Get files by cloning the repository by running command `$ git clone https://github.com/Levi-Opunga/DelaniStudios.git`
 - Open the index.html file with any web browser for viewing and using the webpage
-- To open project in a text editor for easy working access the DelaniStudios directory in which it is saved through the terminal
+- To open project in a text editor for easy working access the pizzashop directory in which it is saved through the terminal
 - If using atom open by running command
   `$ atom .`
 - If using Visual Studio Code open by running command
