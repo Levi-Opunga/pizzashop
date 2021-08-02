@@ -1,25 +1,40 @@
-$(document).ready(function() {});
+//Business Logic$
+var crustSize;
+var crustType;
+var topping;
+var quantity;
+var delivery;
 
 function calculate() {
-    var crustSize = document.querySelector('input[name="crust"]:checked');
-    var crustType = document.querySelector('input[name="crust-type"]:checked');
-    var topping = document.querySelector('input[name="toppings"]:checked');
-    var quantity = document.getElementById("number").value;
-    var delivery = document.querySelector('input[name="delivery"]:checked');
+    crustSize = document.querySelector('input[name="crust"]:checked');
+    crustType = document.querySelector('input[name="crust-type"]:checked');
+    topping = document.querySelector('input[name="toppings"]:checked');
+    quantity = document.getElementById("number").value;
+    delivery = document.querySelector('input[name="delivery"]:checked');
+    display();
+}
+
+//UserInterface
+document.ready(function() {});
+
+function display() {
     var crustTypeA = parseInt(crustType.value);
     var crustSizeA = parseInt(crustSize.value);
     var toppingA = parseInt(topping.value);
-    var quantity = parseInt(quantity);
+    quantity = parseInt(quantity);
     var deliveryA = parseInt(delivery.value);
     var total = (crustSizeA + crustTypeA + toppingA + deliveryA) * quantity;
     var totalIndividualDisplay = crustSizeA + crustTypeA + toppingA + deliveryA;
+    var displaySize = crustSize.id;
+    var displayType = crustSize.id;
+    var displayDelivery = delivery.id;
     document.getElementById("total").innerHTML = "Your bill is " + total;
     document.getElementById("details").innerHTML = "Your order summary:";
-    document.getElementById("size").innerHTML = "Pizza size: " + crustSize.id;
-    document.getElementById("type").innerHTML = "With a " + crustType.id;
+    document.getElementById("size").innerHTML = "Pizza size: " + displaySize;
+    document.getElementById("type").innerHTML = "With a " + displayType;
     document.getElementById("top").innerHTML =
         "With additional toppings " + topping.id;
-    document.getElementById("deliveryBill").innerHTML = delivery.id;
+    document.getElementById("deliveryBill").innerHTML = displayDelivery;
     document.getElementById("chargePer").innerHTML =
         "Your charge per pizza " + totalIndividualDisplay;
     document.getElementById("totalA").innerHTML =
@@ -35,6 +50,12 @@ function calculate() {
             window.open("../thankyoupage2/");
             window.location.reload();
         });
+    }
+    if (delivery.value == 200) {
+        $("#text").removeClass("display");
+    }
+    if (delivery.value != 200) {
+        $("#text").addClass("display");
     }
 }
 
